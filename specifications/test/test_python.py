@@ -2,7 +2,7 @@ import pandas as pd
 from pycaret.classification import load_model, predict_model
 
 # Charger les données
-df = pd.read_excel("data/GRH-DATA.xlsx")
+df = pd.read_excel("data/bronze/GRH-DATA.xlsx")
 
 # Charger le modèle
 model = load_model("models/model_attrition_fixed")

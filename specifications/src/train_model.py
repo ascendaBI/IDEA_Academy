@@ -1,22 +1,10 @@
-# import pandas as pd
-# from pycaret.classification import *
 
-# # Correction du nom du fichier avec tiret
-# df = pd.read_excel("D:/Projet_IDEA/specifications/data/GRH-DATA.xlsx")
-
-# clf = setup(data=df, target="Attrition", session_id=123, use_gpu=False)
-
-# best_model = compare_models()
-
-# save_model(best_model, "D:/Projet_IDEA/specifications/models/model_attrition")
-
-# print("✅ Modèle entraîné et sauvegardé avec succès dans specifications/models/model_attrition.pkl")
 
 import pandas as pd
 from pycaret.classification import *
 
 # Charger les données
-df = pd.read_excel("data/GRH-DATA.xlsx")
+df = pd.read_excel("data/bronze/GRH-DATA.xlsx")
 
 # Initialiser PyCaret (clean, simple, reproductible)
 clf = setup(
